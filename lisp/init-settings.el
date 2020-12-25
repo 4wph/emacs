@@ -15,6 +15,7 @@
 (global-visual-line-mode)
 (show-paren-mode)
 (electric-pair-mode)
+(delete-selection-mode)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
