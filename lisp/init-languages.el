@@ -4,6 +4,8 @@
 
 (use-package lua-mode)
 
+(use-package typescript-mode)
+
 (use-package elm-mode)
 
 (provide 'init-languages)
