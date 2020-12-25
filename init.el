@@ -5,4 +5,3 @@
 (require 'init-core)
 (require 'init-style)
 (require 'init-languages)
-(require 'init-keybindings)
