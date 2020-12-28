@@ -5,15 +5,16 @@
   ([f8] . neotree-projectile-action))
 
 (use-package doom-modeline
-  :init
+  :config
   (doom-modeline-mode 1))
 
 (use-package doom-themes
-  :config
-  (doom-themes-neotree-config)
+  :init
   (setq doom-themes-enable-bold t
 	doom-themes-enable-italic t
 	doom-themes-neotree-file-icons t)
+  :config
+  (doom-themes-neotree-config)
   (load-theme 'doom-one t)
   (doom-themes-org-config))
 
