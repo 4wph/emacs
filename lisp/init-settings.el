@@ -10,7 +10,7 @@
  sentence-end-double-space nil
  ring-bell-function 'ignore
  use-dialog-box nil
- custom-file "~/.config/emacs/custom.el")
+ custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 (global-visual-line-mode)
 (show-paren-mode)
