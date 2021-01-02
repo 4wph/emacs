@@ -6,6 +6,12 @@
 
 (use-package doom-modeline
   :config
+  (doom-modeline-def-modeline 'custom-modeline
+    '(bar buffer-info selection-info)
+    '(major-mode process vcs))
+  (defun setup-custom-doom-modeline ()
+    (doom-modeline-set-modeline 'custom-modeline 'default))
+  (add-hook 'doom-modeline-mode-hook 'setup-custom-doom-modeline)
   (doom-modeline-mode 1))
 
 (use-package doom-themes
