@@ -1,3 +1,5 @@
+(use-package magit)
+
 (use-package ivy
   :config
   (ivy-mode 1))
