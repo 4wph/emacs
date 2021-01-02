@@ -21,21 +21,19 @@
 
 (use-package evil-god-state
   :config
-  (evil-define-key 'normal global-map " " 'evil-execute-in-god-state)
   (evil-define-key 'god global-map [escape] 'evil-god-state-bail))
 
 ; https://github.com/emacs-evil/evil-collection#faq
 (use-package general
-  :ensure t
   :init
   (setq general-override-states '(insert
-                                  emacs
-                                  hybrid
-                                  normal
-                                  visual
-                                  motion
-                                  operator
-                                  replace))
+				  emacs
+				  hybrid
+				  normal
+				  visual
+				  motion
+				  operator
+				  replace))
   :config
   (general-define-key
    :states '(normal visual motion)
