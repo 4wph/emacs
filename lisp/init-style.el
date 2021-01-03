@@ -7,7 +7,7 @@
 (use-package doom-modeline
   :config
   (doom-modeline-def-modeline 'custom-modeline
-    '(bar buffer-info selection-info)
+    '(bar buffer-info)
     '(major-mode process vcs))
   (defun setup-custom-doom-modeline ()
     (doom-modeline-set-modeline 'custom-modeline 'default))
