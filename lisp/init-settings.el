@@ -12,7 +12,6 @@
  use-dialog-box nil
  custom-file (expand-file-name "custom.el" user-emacs-directory))
 
-(global-visual-line-mode)
 (show-paren-mode)
 (electric-pair-mode)
 (delete-selection-mode)
