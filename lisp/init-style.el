@@ -1,6 +1,8 @@
 (use-package all-the-icons)
 
 (use-package neotree
+  :init
+  (setq neo-show-hidden-files t)
   :bind
   ([f8] . neotree-projectile-action))
 
