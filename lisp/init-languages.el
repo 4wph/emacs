@@ -1,3 +1,5 @@
+(use-package cmake-mode)
+
 (use-package clojure-mode)
 
 (use-package haskell-mode)
