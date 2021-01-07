@@ -17,7 +17,7 @@
   (("C-c f" . projectile-find-file)
    ("C-c o" . projectile-switch-project)
    ("C-c k" . projectile-kill-buffers)
-   ("C-c !" . projectile-run-async-shell-command-in-root))
+   ("C-c r" . projectile-run-async-shell-command-in-root))
   :config
   (projectile-mode +1))
 
