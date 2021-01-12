@@ -13,16 +13,19 @@
   (setq projectile-project-search-path '("/home/HDD/Documents/7CC"))
   :bind-keymap
   ("C-c p" . projectile-command-map)
-  :bind
-  (("C-c f" . projectile-find-file)
-   ("C-c o" . projectile-switch-project)
-   ("C-c k" . projectile-kill-buffers)
-   ("C-c r" . projectile-run-async-shell-command-in-root))
   :config
   (projectile-mode +1))
+
+(use-package counsel-projectile
+  :config
+  (counsel-projectile-mode 1))
 
 (use-package expand-region
   :bind
   ("C-=" . er/expand-region))
+
+(use-package avy
+  :bind
+  ("C-:" . avy-goto-char))
 
 (provide 'init-core)
