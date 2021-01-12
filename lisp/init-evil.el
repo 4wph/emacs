@@ -22,6 +22,6 @@
 (use-package evil-god-state
   :config
   (evil-define-key 'normal global-map " " 'evil-execute-in-god-state)
-  (evil-define-key 'god global-map [escape] 'evil-god-state-bail))
+  (evil-define-key 'god global-map [escape] 'evil-god-state-bail)); FIXME does not play well with projectile bindings
 
 (provide 'init-evil)
