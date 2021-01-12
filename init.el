@@ -4,5 +4,6 @@
 (require 'init-package)
 (require 'init-core)
 (require 'init-style)
+(require 'init-style-extra)
 (require 'init-languages)
-(require 'init-evil)
+;(require 'init-evil)
