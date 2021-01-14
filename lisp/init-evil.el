@@ -6,6 +6,7 @@
   (global-evil-leader-mode)
   (evil-leader/set-key
     "p" projectile-command-map
+    "g" 'magit-status
     "a" 'org-agenda))
 
 (use-package evil
