@@ -10,4 +10,6 @@
 
 (use-package elm-mode)
 
+(use-package hy-mode)
+
 (provide 'init-languages)
