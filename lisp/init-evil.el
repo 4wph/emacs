@@ -6,7 +6,10 @@
   (global-evil-leader-mode)
   (evil-leader/set-key
     "p" projectile-command-map
+    ;; "l" lsp-command-map
+    "!" 'projectile-run-async-shell-command-in-root
     "g" 'magit-status
+    "s" 'avy-goto-char
     "a" 'org-agenda))
 
 (use-package evil
@@ -31,17 +34,10 @@
   :config
   (evil-commentary-mode))
 
-(use-package god-mode)
-
-(use-package evil-god-state
-  :config
-  (evil-define-key 'normal global-map (kbd "SPC") 'evil-execute-in-god-state)
-  (evil-define-key 'god global-map [escape] 'evil-god-state-bail)); FIXME does not play well with projectile bindings
-
 (use-package lispyville
   :hook
   ((emacs-lisp-mode lisp-mode clojure-mode hy-mode) . lispyville-mode)
   :config
-  (lispyville-set-key-theme '(operators commentary prettify additional-motions slurp/barf-cp)))
+  (lispyville-set-key-theme '(operators commentary prettify additional additional-motions slurp/barf-cp)))
 
 (provide 'init-evil)
