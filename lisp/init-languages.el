@@ -1,19 +1,21 @@
-(use-package clojure-mode)
+(ensure-package 'eglot); lsp
 
-(use-package haskell-mode)
+(ensure-package 'clojure-mode)
 
-(use-package lua-mode)
+(ensure-package 'haskell-mode)
 
-(use-package typescript-mode)
+(ensure-package 'lua-mode)
 
-(use-package rjsx-mode)
+(ensure-package 'typescript-mode)
 
-(use-package elm-mode)
+(ensure-package 'rjsx-mode)
 
-(use-package hy-mode)
+(ensure-package 'elm-mode)
 
-(use-package alda-mode)
+(ensure-package 'hy-mode)
 
-(use-package cmake-mode)
+(ensure-package 'alda-mode)
+
+(ensure-package 'cmake-mode)
 
 (provide 'init-languages)

@@ -1,3 +1,5 @@
+(put 'inhibit-startup-echo-area-message 'saved-value t)
+
 (setq
  make-backup-files nil
  create-lockfiles nil
@@ -7,15 +9,20 @@
  frame-resize-pixelwise t
  inhibit-startup-screen t
  initial-scratch-message nil
+ inhibit-startup-echo-area-message (user-login-name)
  sentence-end-double-space nil
  ring-bell-function 'ignore
  use-dialog-box nil
  custom-file (expand-file-name "custom.el" user-emacs-directory)
+ ido-enable-flex-matching t
+ ido-everywhere t
+ ido-create-new-buffer 'always
  package-native-compile t)
 
 (show-paren-mode)
 (electric-pair-mode)
 (delete-selection-mode)
+(ido-mode t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 

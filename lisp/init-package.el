@@ -1,13 +1,12 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
+(package-initialize)
 
-(eval-when-compile
-  (require 'use-package))
+(unless package-archive-contents
+  (package-refresh-contents))
 
-(setq use-package-always-ensure t)
+(defmacro ensure-package (package)
+  (list 'unless (list 'package-installed-p package) (list 'package-install package)))
 
 (provide 'init-package)

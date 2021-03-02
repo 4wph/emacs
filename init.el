@@ -2,10 +2,5 @@
 
 (require 'init-settings)
 (require 'init-package)
-(require 'init-core)
-;; (require 'init-lsp)
-(require 'init-evil)
 (require 'init-languages)
-(require 'init-style)
-(require 'init-style-extra)
-;; (require 'init-style-min)
+;; (require 'init-viper)

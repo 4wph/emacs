@@ -1,9 +1,7 @@
 elpa
 custom.el
-auto-save-list
-projectile-bookmarks.eld
-projectile.cache
+ido.last
 eshell
-transient
-var
-.lsp*
+projects
+eln-cache
+auto-save-list
