@@ -1,7 +1,5 @@
 elpa
 custom.el
-ido.last
-eshell
-projects
+var
+etc
 eln-cache
-auto-save-list
