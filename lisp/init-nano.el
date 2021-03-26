@@ -17,7 +17,7 @@
 
 (require 'nano-modeline)
 
-(require 'nano-bindings)
+;; (require 'nano-bindings)
 
 (counsel-mode t)
 (require 'nano-counsel)
@@ -28,8 +28,11 @@
 
 (require 'nano-splash)
 
-(require 'nano-help)
+;; (require 'nano-help)
 
+(global-set-key (kbd "C-x k") 'kill-current-buffer)
+
+; Unsetting
 (menu-bar-mode -1)
 
 (provide 'init-nano)

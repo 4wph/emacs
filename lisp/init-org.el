@@ -4,10 +4,12 @@
                              (python . t)
                              (gnuplot . t)))
 
-(setq org-confirm-babel-evaluate nil)
+(setq org-confirm-babel-evaluate nil
+      org-startup-indented t)
 
 (add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
 (add-hook 'org-mode-hook 'org-display-inline-images)
+(add-hook 'org-mode-hook 'visual-line-mode)
 
 (require 'ox-beamer)
 
