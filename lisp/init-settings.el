@@ -11,19 +11,23 @@
  sentence-end-double-space nil
  ring-bell-function 'ignore
  use-dialog-box nil
- custom-file (expand-file-name "custom.el" user-emacs-directory)
- tab-always-indent 'complete
- ido-enable-flex-matching t
- ido-everywhere t
- ido-create-new-buffer 'always
- package-native-compile t)
+ custom-file (no-littering-expand-etc-file-name "custom.el")
+ tab-always-indent 'complete)
 
 (show-paren-mode)
 (electric-pair-mode)
 (delete-selection-mode)
-(ido-mode t)
+;; (icomplete-mode)
 
 (put 'inhibit-startup-echo-area-message 'saved-value t)
+
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+(defvar project-folder "/home/HDD/Documents/7CC")
+(put 'dired-find-alternate-file 'disabled nil)
+(add-hook 'dired-load-hook (lambda () (load "dired-x")))
+
+(require 'ibuf-ext)
+(add-to-list 'ibuffer-never-show-predicates "^\\*")
 
 (provide 'init-settings)
