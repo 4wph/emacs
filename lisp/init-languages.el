@@ -18,4 +18,6 @@
 
 (ensure-package 'cmake-mode)
 
+(ensure-package 'kivy-mode)
+
 (provide 'init-languages)
