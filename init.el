@@ -4,5 +4,5 @@
 (require 'init-org)
 (require 'init-bindings)
 
-;; (require 'init-languages)
+(require 'init-languages)
 ;; (require 'init-viper)

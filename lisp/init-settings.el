@@ -9,6 +9,10 @@
 (defmacro ensure-package (package)
   (list 'unless (list 'package-installed-p package) (list 'package-install package)))
 
+(defun ensure-packages (package-list)
+  (dolist (package package-list)
+    (ensure-package package)))
+
 (ensure-package 'no-littering)
 (require 'no-littering)
 

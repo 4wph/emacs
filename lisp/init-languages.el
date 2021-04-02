@@ -1,23 +1,13 @@
 (ensure-package 'eglot); lsp
 
-(ensure-package 'clojure-mode)
+(defun mode-into-package (mode)
+  (car (read-from-string (concat (prin1-to-string mode) "-mode"))))
 
-(ensure-package 'haskell-mode)
+(defun ensure-modes (mode-list)
+  (dolist (mode mode-list)
+    (ensure-package (mode-into-package mode))))
 
-(ensure-package 'lua-mode)
-
-(ensure-package 'typescript-mode)
-
-(ensure-package 'rjsx-mode)
-
-(ensure-package 'elm-mode)
-
-(ensure-package 'hy-mode)
-
-(ensure-package 'alda-mode)
-
-(ensure-package 'cmake-mode)
-
-(ensure-package 'kivy-mode)
+(let ((modes (quote (clojure haskell lua fennel typescript elm hy kivy))))
+  (ensure-modes modes))
 
 (provide 'init-languages)
