@@ -7,7 +7,7 @@
   (dolist (mode mode-list)
     (ensure-package (mode-into-package mode))))
 
-(let ((modes (quote (clojure haskell lua fennel typescript elm hy kivy))))
+(let ((modes (quote (clojure haskell lua fennel typescript elm hy kivy go))))
   (ensure-modes modes))
 
 (provide 'init-languages)
