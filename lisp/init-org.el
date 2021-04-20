@@ -5,7 +5,9 @@
                              (gnuplot . t)))
 
 (setq org-confirm-babel-evaluate nil
-      org-startup-indented t)
+      org-export-babel-evaluate nil
+      org-startup-indented t
+      org-image-actual-width (/ (display-pixel-width) 3))
 
 (add-hook 'org-babel-after-execute-hook 'org-display-inline-images)
 (add-hook 'org-mode-hook 'org-display-inline-images)
