@@ -9,7 +9,10 @@
 ;; (require 'init-viper)
 
 (require 'init-languages)
+
 (require 'init-extra)
+
 (require 'init-evil)
+
 (require 'init-style)
 (require 'init-style-extra)
