@@ -19,4 +19,14 @@
 (doom-themes-neotree-config)
 (global-set-key [f8] 'neotree-projectile-action)
 
+(ensure-package 'centaur-tabs)
+(setq centaur-tabs-style "bar"
+      centaur-tabs-set-icons t
+      centaur-tabs-set-bar 'left
+      centaur-tabs-height 30
+      centaur-tabs-show-navigation-buttons t)
+(centaur-tabs-mode t)
+(define-key evil-normal-state-map (kbd "g t") 'centaur-tabs-forward)
+(define-key evil-normal-state-map (kbd "g T") 'centaur-tabs-backward)
+
 (provide 'init-style-extra)
