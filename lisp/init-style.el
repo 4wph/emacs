@@ -12,6 +12,6 @@
 (ensure-package 'org-superstar)
 (add-hook 'org-mode-hook 'org-superstar-mode)
 
-(load-theme 'doom-snazzy t)
+(load-theme 'doom-one t)
 
 (provide 'init-style)
