@@ -30,4 +30,6 @@
 (require 'ibuf-ext)
 (add-to-list 'ibuffer-never-show-predicates "^\\*")
 
+(defvar project-folder "/home/HDD/Documents/7CC")
+
 (provide 'init-settings)
