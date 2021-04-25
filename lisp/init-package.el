@@ -11,9 +11,9 @@
 
 (eval-when-compile
   (require 'use-package))
+(require 'bind-key)
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
-(require 'bind-key)
 
 (use-package no-littering)
 

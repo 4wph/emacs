@@ -1,5 +1,9 @@
-(setq evil-want-keybinding nil
-      evil-want-integration t); needed for evil-collection
+(use-package evil
+  :init
+  (setq evil-want-keybinding nil
+	evil-want-integration t); needed for evil-collection
+  :config
+  (evil-mode 1))
 
 (use-package evil-leader
   :config
@@ -15,10 +19,6 @@
     "g" 'magit))
 
 ;; TODO: Modal forms of C-c & C-x (god-mode?)
-
-(use-package evil
-  :config
-  (evil-mode 1))
 
 (use-package evil-collection
   :config

@@ -8,7 +8,7 @@
 (use-package kivy-mode)
 (use-package go-mode)
 
-(use-package paredit			; lisp ast manipulation
+(use-package paredit; lisp ast manipulation
   :hook
   ((clojure-mode hy-mode lisp-mode common-lisp-mode emacs-lisp-mode scheme-mode fennel-mode) . paredit-mode))
 
