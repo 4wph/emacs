@@ -25,7 +25,7 @@
   (evil-collection-init))
 
 (use-package evil-org
-  :hook org-mode
+  :hook (org-mode . evil-org-mode)
   :config
   (require 'evil-org-agenda)
   (evil-org-agenda-set-keys))

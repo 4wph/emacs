@@ -12,7 +12,7 @@
   (doom-modeline-mode 1))
 
 (use-package org-superstar
-  :hook org-mode)
+  :hook (org-mode . org-superstar-mode))
 
 (load-theme 'doom-vibrant t)
 
