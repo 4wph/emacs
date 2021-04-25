@@ -1,9 +1,17 @@
-(let ((modes (quote (clojure haskell lua fennel typescript elm hy kivy go))))
-  (ensure-modes modes))
+(use-package clojure-mode)
+(use-package haskell-mode)
+(use-package lua-mode)
+(use-package fennel-mode)
+(use-package typescript-mode)
+(use-package elm-mode)
+(use-package hy-mode)
+(use-package kivy-mode)
+(use-package go-mode)
 
-(ensure-package 'paredit); lisp ast manipulation
-(hook-modes (quote (clojure hy lisp common-lisp emacs-lisp scheme fennel)) 'paredit)
+(use-package paredit			; lisp ast manipulation
+  :hook
+  ((clojure-mode hy-mode lisp-mode common-lisp-mode emacs-lisp-mode scheme-mode fennel-mode) . paredit-mode))
 
-(ensure-package 'eglot); lsp
+(use-package eglot); lsp
 
 (provide 'init-languages)

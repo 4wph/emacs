@@ -6,7 +6,15 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(ensure-package 'no-littering)
-(require 'no-littering)
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
+(require 'use-package-ensure)
+(setq use-package-always-ensure t)
+(require 'bind-key)
+
+(use-package no-littering)
 
 (provide 'init-package)

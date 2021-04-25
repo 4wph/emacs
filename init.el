@@ -1,7 +1,5 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
-(require 'util)
-
 (require 'init-package)
 (require 'init-settings)
 (require 'init-org)

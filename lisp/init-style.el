@@ -1,17 +1,19 @@
-(setq doom-themes-enable-bold t
-      doom-themes-enable-italic t)
+(use-package doom-themes
+  :init
+  (setq doom-themes-enable-bold t
+	doom-themes-enable-italic t)
+  :config
+  (doom-themes-org-config))
 
-(ensure-package 'doom-themes)
-(doom-themes-org-config)
+(use-package all-the-icons)
 
-(ensure-package 'all-the-icons)
+(use-package doom-modeline
+  :config
+  (doom-modeline-mode 1))
 
-(ensure-package 'doom-modeline)
-(doom-modeline-mode 1)
+(use-package org-superstar
+  :hook org-mode)
 
-(ensure-package 'org-superstar)
-(add-hook 'org-mode-hook 'org-superstar-mode)
-
-(load-theme 'doom-one t)
+(load-theme 'doom-vibrant t)
 
 (provide 'init-style)
