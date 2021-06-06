@@ -10,7 +10,10 @@
 
 (require 'init-extra)
 
-(require 'init-evil)
+;; (require 'init-evil)
 
 (require 'init-style)
-(require 'init-style-extra)
+;; (require 'init-style-extra)
+;; (require 'init-prog-style)
+
+(require 'init-exwm)
