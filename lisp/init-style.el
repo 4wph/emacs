@@ -11,9 +11,20 @@
   :config
   (doom-modeline-mode 1))
 
+(load-theme 'doom-vibrant t)
+
 (use-package org-superstar
   :hook (org-mode . org-superstar-mode))
 
-(load-theme 'doom-vibrant t)
+(use-package dashboard
+  :init
+  (setq dashboard-center-content t
+	dashboard-projects-switch-function 'counsel-projectile-switch-project-by-name
+	dashboard-set-heading-icons t
+	dashboard-set-file-icons t
+	dashboard-items '((recents . 3)
+			  (projects . 3)))
+  :config
+  (dashboard-setup-startup-hook))
 
 (provide 'init-style)
