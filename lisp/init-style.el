@@ -15,10 +15,7 @@
   :config
   (doom-modeline-mode 1))
 
-(load-theme 'doom-vibrant t)
-
-(use-package org-superstar
-  :hook (org-mode . org-superstar-mode))
+(load-theme 'doom-one t)
 
 (use-package dashboard
   :init
@@ -30,5 +27,8 @@
 			  (projects . 3)))
   :config
   (dashboard-setup-startup-hook))
+
+(use-package org-superstar
+  :hook (org-mode . org-superstar-mode))
 
 (provide 'init-style)

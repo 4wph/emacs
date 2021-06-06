@@ -23,7 +23,8 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; (put 'dired-find-alternate-file 'disabled nil)
+(put 'dired-find-alternate-file 'disabled nil)
+
 ;; (add-hook 'dired-load-hook (lambda () (load "dired-x")))
 ;; (add-hook 'dired-mode-hook 'dired-hide-details-mode)
 
