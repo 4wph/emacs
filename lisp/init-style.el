@@ -5,7 +5,11 @@
   :config
   (doom-themes-org-config))
 
-(use-package all-the-icons)
+(use-package all-the-icons
+  :config
+  (add-to-list 'all-the-icons-mode-icon-alist '(exwm-mode all-the-icons-fileicon "elisp" :height 1.0 :v-adjust 0.0))
+  (add-to-list 'all-the-icons-extension-icon-alist '("hy" all-the-icons-alltheicon "python" :height 1.0 :face all-the-icons-dblue))
+  (add-to-list 'all-the-icons-extension-icon-alist '("kv" all-the-icons-alltheicon "python" :height 1.0 :face all-the-icons-dblue)))
 
 (use-package doom-modeline
   :config
