@@ -16,6 +16,11 @@
 
 (exwm-input-set-key (kbd "s-b") (lambda () (interactive) (start-process-shell-command "qutebrowser" nil "qutebrowser")))
 (exwm-input-set-key (kbd "s-e") (lambda () (interactive) (start-process-shell-command "pcmanfm" nil "pcmanfm")))
+(exwm-input-set-key (kbd "s-x") (lambda () (interactive) (start-process-shell-command "screenshot" nil "scrot /home/HDD/Pictures/Screenshots/%m%d-%H%M%S.png")))
+(exwm-input-set-key (kbd "s-v") (lambda () (interactive) (start-process-shell-command "volup" nil "amixer set Headphone 5%+")))
+(exwm-input-set-key (kbd "s-S-v") (lambda () (interactive) (start-process-shell-command "voldown" nil "amixer set Headphone 5%-")))
+
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 
 (require 'exwm-config)
 (exwm-config-default)
