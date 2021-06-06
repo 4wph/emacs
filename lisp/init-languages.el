@@ -12,6 +12,6 @@
   :hook
   ((clojure-mode hy-mode lisp-mode common-lisp-mode emacs-lisp-mode scheme-mode fennel-mode) . paredit-mode))
 
-(use-package eglot); lsp
+;; (use-package eglot); lsp
 
 (provide 'init-languages)

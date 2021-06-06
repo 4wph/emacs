@@ -6,6 +6,8 @@
 
 (global-set-key (kbd "C-c b") (lambda () (interactive) (ibuffer)))
 
+(global-set-key (kbd "C-c e") (lambda () (interactive) (eshell)))
+
 (global-set-key (kbd "C-c t") (lambda () (interactive) (progn (split-window-below) (other-window 1) (eshell))))
 
 (provide 'init-bindings)

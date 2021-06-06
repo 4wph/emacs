@@ -1,4 +1,6 @@
-(use-package magit)
+(use-package magit
+  :bind
+  ("C-x g" . magit))
 
 (use-package ivy
   :config
@@ -14,7 +16,7 @@
   :config
   (projectile-mode +1)
   :bind-keymap
-  ("C-x p" . 'projectile-command-map))
+  ("C-x p" . projectile-command-map))
 
 (use-package counsel-projectile
   :config
