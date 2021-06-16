@@ -1,8 +1,4 @@
-;; (use-package exwm)
-
-;;; FIXME
-(add-to-list 'load-path (expand-file-name "exwm/exwm" user-emacs-directory))
-(add-to-list 'load-path (expand-file-name "exwm/xelb" user-emacs-directory))
+(use-package exwm)
 
 (start-process-shell-command "esctrl" nil "setxkbmap -layout us -option ctrl:nocaps")
 (start-process-shell-command "fixcursor" nil "xsetroot -cursor_name left_ptr")
